@@ -19,6 +19,22 @@ class Personnage {
         $this->vie = 50;
     }
 
+    /**
+     * @return int
+     */
+    public function getVie(): int
+    {
+        return $this->vie;
+    }
+
+    /**
+     * @param int $vie
+     */
+    public function setVie(int $vie): void
+    {
+        $this->vie = $vie;
+    }
+
     // Méthode permettant de déplacer le personnage vers la droite
     public function walkRight() {
         $this->x += 1;
